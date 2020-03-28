@@ -2,6 +2,7 @@
 /* COLORS
     #f1c40f orange light
     #f39c12 orang dark
+    
     FONT STYLE
   "Pristina"
   */
@@ -18,6 +19,7 @@ body{
     color: #777;
     padding: 3rem;
     background-color: #fff;
+    box-shadow: rgba(0, 0, 0, .5);
 }
 
 html{
@@ -252,16 +254,18 @@ html{
 .col-1-of-4:not(:last-child){
     margin-right: 6rem;
 }
+
 .services-box{
     height: 35rem;
     border-top-left-radius: .8rem;
     border-bottom-right-radius: 2rem;
     background-color: #fff;
     transition: all .8s ease;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.192);
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.4);
     margin: 6rem 0;
 }
-.services-box:hover{
+
+services-box:hover{
     transform: scale(1.1);
     box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.192);
 }
@@ -678,7 +682,7 @@ html{
 .col-1-of-6:not(:last-child){
     margin-right: 8rem;
 }
-/************RESTURANT PARTNERS**************/
+/************RESTAURANT PARTNERS**************/
 
 .partner-heading{
     margin-top: 5rem;
