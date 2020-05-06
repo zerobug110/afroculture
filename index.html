@@ -17,6 +17,9 @@
             <div class="logo-heading u-margin-small">
                 <a href=""><img src="image/logo.png" alt="" class="logo"></a>
             </div>
+                <a href="#" class = "close">x</a>                
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle"/>
             <nav class="nav-bar">
                 <ul>
                     <li><a href="#contact">contact us</a></li>
@@ -155,7 +158,6 @@
                             <h3 class="card-heading">fufu</h3>
                             <h4 class="card-heading-sub">Ingredients</h4>
                             <ul>
-                                <li>Rice</li>
                                 <li>ockra</li>
                                 <li>green leaf</li>
                                 <li>cassava</li>
@@ -215,13 +217,12 @@
                             <img src="image/ofada-sauce1.jpg" alt="" class="food-img">
                         </div>
                         <div class="card-back">
-                            <h3 class="card-heading">ofada souce</h3>
+                            <h3 class="card-heading">ofada soap</h3>
                             <h4 class="card-heading-sub">ingredients</h4>
                             <ul>
                                 <li>Rice</li>
                                 <li>penut oil</li>
                                 <li>Tomato</li>
-                                <li> bush meat</li>
                                 <li>palm oil</li>
                             </ul>
                             <span class="order-price">D320</span>
@@ -353,9 +354,9 @@
                     </div>
 
                     <div class="story-text">
-                        <h3 class="story-heading">
-                            My family's favorite resturant
-                        </h3>
+                        <h4 class="story-heading">
+                            FASTEST
+                        </h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis cumque,
                             ad ullam quas at repellendus nostrum incidunt. Impedit, dolorum quam sed,
                             necessitatibus aut perferendis illo nisi eveniet excepturi in perspiciatis?
@@ -372,9 +373,10 @@
                     </div>
 
                     <div class="story-text">
-                        <h3 class="story-heading">
-                            Fastest food delivery resturant
-                        </h3>
+                        <h4 class="story-heading">
+                            AMAZING
+                        </h4>
+
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis cumque,
                             ad ullam quas at repellendus nostrum incidunt. Impedit, dolorum quam sed,
                             necessitatibus aut perferendis illo nisi eveniet excepturi in perspiciatis?
@@ -382,6 +384,7 @@
                             necessitatibus aut perferendis illo nisi eveniet excepturi
                         </p>
                     </div>
+                    <a href="" class="btn-more">view more</a>
                 </div>
             </div>
         </section>
@@ -493,4 +496,13 @@
         </div>
     </div>
 </div>
+<script>
+    document.querySelector('.close').addEventListener('click', function(){
+        document.querySelector('.nav-bar').style.display = 'none';
+    })
+
+    document.querySelector('#toggle').addEventListener('click', function(){
+        document.querySelector('.nav-bar').style.display = 'block';
+    })
+</script>
 </html>
