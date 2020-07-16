@@ -134,17 +134,19 @@ header label {
     transform: translate( -50%, -50%);
     text-align: center;
 }
+
 .heading-primary{
     color: #fff;
-    
+    padding-bottom: 3rem;
 }
+
 .heading-primary-main{
     display: block;
     font-size: 4rem;
     font-weight: 200;
     text-transform: uppercase;
-    word-spacing: 3rem;
-    padding: 0;
+    word-spacing: .1rem;
+ 
    
     animation-name: moveInRight;
     animation-duration: 2s;
@@ -152,6 +154,7 @@ header label {
     backface-visibility: hidden;
     
 }
+
 @keyframes moveInRight{
     0%{
         opacity: 0;
@@ -178,24 +181,24 @@ header label {
     font-weight: 300;
     color:#fff;
     word-spacing: .5rem;
-    margin-bottom: 2rem;
+    margin-top: -1rem;
+   
 
     animation-name: moveInTop;
 }
 
 .order-btn:visited,
 .order-btn:link{
-    text-transform: capitalize;
-    margin-top: 2rem;
+    text-transform: uppercase;
     font-size: 1.6rem;
-    padding: 1rem 4rem;
+    font-weight: 600;
+    padding: 1rem 3rem;
     box-shadow: 0 .7rem 1rem rgba(0, 0, 0, .3);
     background-image: linear-gradient(
         to right, 
-        #25f112,
-        #fdf132);
+        #168a0c,
+        #beb20a);
     border-radius: 2rem;
-    font-weight: 200;
     text-decoration: none;
     color: #fff;
     transition: all .2s;
@@ -205,8 +208,8 @@ header label {
 .order-btn:hover{
     background-image: linear-gradient(
         to left, 
-        #fdf132,
-        #f39c12);
+        #168a0c,
+        #beb20a);
     box-shadow: 0 2rem 3rem ,rgba(0,0,0, .7);
 }
 
@@ -228,7 +231,9 @@ header label {
 .intercept-img{
     width: 8.5%;
     margin-top: -3rem;
+    filter: brightness(85%);
 }
+
 .services-heading{
     text-align: center;
     display: block;
@@ -237,11 +242,11 @@ header label {
 }
 .services-heading-text{
     font-size: 3rem;
-    font-weight: 200;
+    font-weight: 500;
     background-image: linear-gradient(
         to right,
-        #fdf132,
-        #f39c12);
+        #319908,
+        #9cb608);
     -webkit-background-clip: text;
     color: transparent;
     text-transform: capitalize;
@@ -279,12 +284,13 @@ header label {
 }
 
 .services-box{
-    height: 30rem;
+    height: 29rem;
     border-top-left-radius: .8rem;
     border-bottom-right-radius: 2rem;
     background-color: #fff;
     transition: all .8s ease;
-    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.4);
+    box-shadow: .0 .3rem 1rem rgba(0, 0, 0, 0.3),
+                .0 .3rem 1rem rgba(0, 0, 0, 0.1);
     margin: 6rem 0;
 }
 
@@ -301,7 +307,7 @@ services-box:hover{
       -webkit-background-clip: text;
       color: transparent;
       display: inline-block;
-    border-bottom: #fdf132 .1rem solid;
+    border-bottom: #cfc204 .1rem solid;
     margin-bottom: 2rem;
     
 }
@@ -494,7 +500,7 @@ services-box:hover{
         #f39c12,
         #fdf132);
     padding: .4rem;
-    color: #333;
+    color: #07300c;
     box-shadow: 0 .1rem .7rem rgba(0, 0, 0, .9);    
 }
 
@@ -504,7 +510,7 @@ services-box:hover{
     margin-bottom: 3rem;
 }
 .social-media-box {
-    width: 15rem;
+    width: 12rem;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -619,8 +625,8 @@ services-box:hover{
     font-size: 2.5rem;
     background-image: linear-gradient(
         to left,
-        #f39c12,
-        #fdf132);
+        #319908,
+        #9cb608);
     -webkit-background-clip: text;
     color: transparent;
     
@@ -663,7 +669,9 @@ services-box:hover{
 #submit-btn{
     margin-top: 1rem;
     padding: 1rem 5rem;
-    background-color: #f39c12;
+    background-image:linear-gradient(to left, #319908,
+    #9cb608);
+    outline: none;
     border: none;
     border-top-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
@@ -671,6 +679,7 @@ services-box:hover{
     color: #fff;
     font-size: inherit;
     position: relative;
+    cursor: pointer;
  
 }
 
@@ -685,7 +694,7 @@ services-box:hover{
     text-transform: capitalize;
 }
 .footer-logo{
-    width: 40%;
+    width: 100%;
 }
 .footer-list-sub-heading{
     font-size: 1.8rem;
@@ -693,37 +702,51 @@ services-box:hover{
 }
 .col-1-of-6{
     width:calc((100% - 4*8rem)/5);
+    color: #fff;
+    filter: brightness(80%);
 }
 .col-1-of-6 > ul{
     font-size: 1.6rem;
     list-style: none;
-    text-align: justify; 
-    color: #999;
+    text-align: center; 
+    
 }
 .col-1-of-6 a{
     text-decoration: none;
     color: inherit;
+    
 }
 
-.col-1-of-6 li{
+.col-1-of-6 li:not(:first-child){
     transition: all .3s;
+    color: #fff;
 }
 .col-1-of-6 li:hover{
     color: #fff;
-    transform: scale(1.2)
+    transform: scale(1.1);
+    backface-visibility: hidden;
+ 
 }
 .footer-list-sub-heading li:hover{
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5);
     display: inline-block;
-    transform: translateY(-1rem);
-    padding: 0 1rem;
+    transform: scale(1.1rem);
+
 }
 .col-1-of-6:not(:last-child){
     margin-right: 8rem;
 }
+
+.resturan-name{
+    text-transform: capitalize;
+    margin-top: 1rem;
+    color: #fff;
+    filter: brightness(70%);
+}
+
 /************RESTAURANT PARTNERS**************/
 
 .partner-heading{
+    text-align: center;
     margin-top: 5rem;
     padding: 3rem 0;
     color: #fdf132; 
@@ -763,7 +786,7 @@ services-box:hover{
         margin-top: 2rem;
         font-size: 1.3rem;
         padding: 1rem 2rem;
-        color: #333;
+        color: #fff;
     }
 
 
