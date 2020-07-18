@@ -288,14 +288,14 @@ header label {
     border-top-left-radius: .8rem;
     border-bottom-right-radius: 2rem;
     background-color: #fff;
-    transition: all .8s ease;
+    transition: all .2s ease-in-out;
     box-shadow: .0 .3rem 1rem rgba(0, 0, 0, 0.3),
                 .0 .3rem 1rem rgba(0, 0, 0, 0.1);
     margin: 6rem 0;
 }
 
-services-box:hover{
-    transform: scale(1.1);
+.services-box:hover{
+    transform: translateY(-.5rem);
     box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.192);
 }
 .icon-style {
@@ -346,7 +346,7 @@ services-box:hover{
 
 .food-img{
     width:100%;
-    height: auto;
+    height: 33rem;
     box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .9);
     border-top-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
@@ -354,7 +354,6 @@ services-box:hover{
     
 }
 .card{
-    
     text-align: center;
     font-size: 1.6rem;
     transform-style: preserve-3d;
@@ -697,13 +696,15 @@ services-box:hover{
     width: 100%;
 }
 .footer-list-sub-heading{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: #fdf132 !important;   
+    text-transform: uppercase;
 }
+
+
 .col-1-of-6{
     width:calc((100% - 4*8rem)/5);
-    color: #fff;
-    filter: brightness(80%);
+    color: #dfd9d9;
 }
 .col-1-of-6 > ul{
     font-size: 1.6rem;
@@ -718,12 +719,12 @@ services-box:hover{
 }
 
 .col-1-of-6 li:not(:first-child){
-    transition: all .3s;
+    transition: all .5s;
     color: #fff;
 }
 .col-1-of-6 li:hover{
     color: #fff;
-    transform: scale(1.1);
+    font-size: 1.7rem;
     backface-visibility: hidden;
  
 }
