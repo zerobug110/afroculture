@@ -17,7 +17,7 @@ body{
     font-weight: 400;
     line-height: 1.7;
     color: #777;
-    padding: 3rem;
+  
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, .5);
 }
@@ -35,13 +35,14 @@ html{
             url(../image/table-meal.jpg);
     background-size: cover;
     position: top;
-    height: 90vh;
+    height: 100vh;
     position: relative;
 }
                                                   /*********** HEADER*************/
 .nav-bar{
     width: 100%;
-    height: 5rem;
+    height: 10rem;
+    background-color: #ffffff;
 }
 
 .nav-bar ul{
@@ -53,6 +54,7 @@ html{
 }
 
 header label {
+
     display: none;
     color: #fff;
     padding: 2rem;
@@ -78,8 +80,8 @@ header label {
 }
 
 .logo{
-    width: 15rem;
-    padding: 3.3rem;
+    width: 8rem;
+    margin-top: 1rem;
     float: left;
     animation-name: rotateLogo;
     animation-delay: .3s;
@@ -108,7 +110,7 @@ header label {
 
 .nav-bar li {
     float: right;
-    padding: 3.3rem 1.7rem;
+    padding: 2rem 1.7rem;
     list-style: none;
 }
 
@@ -121,11 +123,11 @@ header label {
 .nav-bar a:active{
     font-size: 1.4rem;
     text-decoration: none;
-    color: #fdf132;
+    color: #555;
     text-transform: uppercase;
 }
 .nav-bar a:hover{
-    color: #fff;
+    color: #000;
 }
 .header-text-box{
     position: absolute;
@@ -222,17 +224,6 @@ header label {
     position: relative;
 }
 
-.div-interceptor{
-    position: absolute;
-    top: .5rem;
-    left: 48%;
-    
-}
-.intercept-img{
-    width: 8.5%;
-    margin-top: -3rem;
-    filter: brightness(85%);
-}
 
 .services-heading{
     text-align: center;
@@ -285,8 +276,6 @@ header label {
 
 .services-box{
     height: 29rem;
-    border-top-left-radius: .8rem;
-    border-bottom-right-radius: 2rem;
     background-color: #fff;
     transition: all .2s ease-in-out;
     box-shadow: .0 .3rem 1rem rgba(0, 0, 0, 0.3),
@@ -348,8 +337,8 @@ header label {
     width:100%;
     height: 33rem;
     box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .9);
-    border-top-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
    
     
 }
@@ -601,7 +590,7 @@ header label {
 }
 #map{
     width: 60%;
-    height: 50rem;
+    height: 55rem;
 }
 
 .form{
@@ -611,8 +600,13 @@ header label {
     background-color: rgba(255, 255, 255, .5);
     top: 0;
     right: 0;   
-    padding-left: 5rem;  
+    padding: 2rem 0 0 5rem;  
 }
+
+.form > * {
+    font-family: sans-serif;
+}
+
 .form-text-box{
     font-size: 1.6rem;
     text-transform: uppercase;
@@ -631,13 +625,17 @@ header label {
     
 }
 .input{
+    color: #444;
+    font-size: 1.6rem;
+    font-family: sans-serif;
     padding: 1rem .5rem;
     margin-bottom: 1rem;
+    border-radius: .2rem;
 }
 .input:focus{
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
-    border-bottom: .3rem solid #f39c12;
+    border-bottom: .3rem solid #319908;
 }
 
 .inputs::-webkit-input-placeholder{
@@ -646,11 +644,10 @@ header label {
 }
 
 .form-group #fullname,#email{
+    font-family: sans-serif;
     display: block;
     width: 90%;
     padding-top: 2rem;
-    border-top-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
     border: none;
     box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .2);
 }
@@ -659,8 +656,6 @@ header label {
     margin-top: 2rem;
     width: 90%;
     font-size: inherit;
-    border-top-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
     border: none;
     box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .5);
 }
@@ -707,7 +702,7 @@ header label {
     color: #dfd9d9;
 }
 .col-1-of-6 > ul{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     list-style: none;
     text-align: center; 
     
