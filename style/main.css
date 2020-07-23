@@ -506,14 +506,14 @@ header label {
 
 }
 .facebook-icon:hover {
-    fill: rgb(48, 144, 235);
+    fill: #3b5998;
 }
 .twitter-icon:hover {
-   fill: #36d9ee;
+   fill: #00acee;
 
 }
 .youtube-icon:hover {
-    fill: rgba(211, 16, 16, 0.932);
+    fill: #d31010ee;
 }
 
 /**** consumer review ******/
@@ -526,7 +526,7 @@ header label {
 .story{
     width: 75%;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
-    background-color: rgba(255, 255, 255, .6);
+    background-color: #fff;
     transform: skewX(-15deg);
     margin: 0 auto;
     padding: 5rem 5rem;
