@@ -14,14 +14,21 @@
 <body>
     <main>
         <header class="header" id="home">
-            <div class="logo-heading u-margin-small">
-                <a href=""><img src="image/logo.png" alt="logo" class="logo"></a>
-            </div>
+            
                 <a href="#" class = "close">x</a>                
                 <label for="toggle">&#9776;</label>
                 <input type="checkbox" id="toggle"/>
             <nav class="nav-bar">
+                <div class="logo-heading u-margin-small">
+                    <a href=""><img src="image/logo.png" alt="logo" class="logo"></a>
+                </div>
                 <ul>
+                    <li>
+                        <svg class="cart-icon">
+                            <use xlink:href="image/sprite.svg#icon-cart"></use>
+                        </svg>
+                    </li>
+
                     <li><a href="#contact">contact us</a></li>
                     <li><a href="#consumer">review</a></li>
                     <li><a href="#staff">staffs</a></li>
@@ -30,6 +37,9 @@
                     <li><a href="#home">home</a></li>
                 </ul>
             </nav>
+            <div class="cart-container">
+
+            </div>
             <div class="header-text-box">
                 <h1 class="heading-primary">
                     <span class="heading-primary-main">AFRICAN cultural FOOD</span>
@@ -70,7 +80,7 @@
 
                 <div class="col-1-of-4 services-box">
                     <i class="icon-basic-heart icon-style"></i>
-                    <h3 class="services-heading-sub">healty food</h3>
+                    <h3 class="services-heading-sub">healthy food</h3>
                     <p> 
                         ipsum dolor sit amet consectetur adipisicing elit.
                         Sequi exercit ationem consectetur adipisicing
@@ -113,7 +123,7 @@
                                 <li>Oil</li>
                             </ul>
                             <span class="order-price">D210</span>
-                            <a href="#" class="order-btn-mini">order now</a>
+                            <a href="#" class="order-btn-mini">add to cart</a>
                         </div>
                     </div>
                 </div>
@@ -133,7 +143,7 @@
                                 <li>onion</li>
                             </ul>
                             <span class="order-price">D170</span>
-                            <a href="" class="order-btn-mini">order now</a>
+                            <a href="" class="order-btn-mini">add to cart</a>
                         </div>
                     </div>
                 </div>   
@@ -153,7 +163,7 @@
                                 <li>Oil</li>
                             </ul>
                             <span class="order-price">D170</span>
-                            <a href="#" class="order-btn-mini">order now</a>
+                            <a href="#" class="order-btn-mini">add to cart</a>
                         </div>
                     </div>
                 </div>
@@ -173,7 +183,7 @@
                                 <li>Rice</li>
                             </ul>
                             <span class="order-price">D120</span>
-                            <a href="#" class="order-btn-mini">order now</a>
+                            <a href="#" class="order-btn-mini">add to cart</a>
                         </div>
                     </div>
                 </div>    
@@ -196,7 +206,7 @@
                                 <li>cassava</li>
                             </ul>
                             <span class="order-price">D190</span>
-                            <a href="#" class="order-btn-mini">order now</a>
+                            <a href="#" class="order-btn-mini">add to cart</a>
                         </div>
                     </div>
                 </div>
@@ -216,7 +226,7 @@
                                 <li>tomato</li>
                             </ul>
                             <span class="order-price">D145</span>
-                            <a href="#" class="order-btn-mini">order now</a>
+                            <a href="#" class="order-btn-mini">add to cart</a>
                         </div>
                     </div>
                 </div>                    
@@ -236,7 +246,7 @@
                                 <li>groundnuts</li>
                             </ul>
                             <span class="order-price">D320</span>
-                            <a href="#" class="order-btn-mini">order now</a>
+                            <a href="#" class="order-btn-mini">add to cart</a>
                         </div>
                     </div>
                 </div>
@@ -255,7 +265,7 @@
                                 <li>potator</li>
                                 <li>salad</li>                            </ul>
                             <span class="order-price">D140</span>
-                            <a href="#" class="order-btn-mini">order now</a>
+                            <a href="#" class="order-btn-mini">add to cart</a>
                         </div>
                     </div>
                 </div>   
@@ -270,7 +280,7 @@
             <div class="staff-img-row">
                 <div class="staff-col">
                     <div class="staff-img-container">
-                        <img src="image/master-chef-1.jpg" alt="chef" class="img-staff">
+                        <img src="image/customer-3.jpg" alt="chef" class="img-staff">
                     </div>
                     <div class="staff-social-details">
                         <h4 class="staff-names">
@@ -279,17 +289,17 @@
                         <div class="social-media-box">
                             <a href="facebook.com" class="facebook-icon">
                                 <svg class="social-media-icons">
-                                    <use xlink:href="image/sprite.svg#icon-social-facebook"></use>
+                                    <use xlink:href="image/sprite.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                             <a href="youtube.com" class="youtube-icon">
                                 <svg class="social-media-icons">
-                                    <use xlink:href="image/sprite.svg#icon-youtube"></use>
+                                    <use xlink:href="image/sprite.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                             <a href="twitter.com" class="twitter-icon">
                                 <svg class="social-media-icons">
-                                    <use xlink:href="image/sprite.svg#icon-social-twitter"></use>
+                                    <use xlink:href="image/sprite.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </div>
@@ -306,17 +316,17 @@
                         <div class="social-media-box">
                             <a href="facebook.com" class="facebook-icon">
                                 <svg class="social-media-icons">
-                                    <use xlink:href="image/sprite.svg#icon-social-facebook"></use>
+                                    <use xlink:href="image/sprite.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                             <a href="youtube.com" class="youtube-icon">
                                 <svg class="social-media-icons">
-                                    <use xlink:href="image/sprite.svg#icon-youtube"></use>
+                                    <use xlink:href="image/sprite.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                             <a href="twitter.com" class="twitter-icon">
                                 <svg class="social-media-icons">
-                                    <use xlink:href="image/sprite.svg#icon-social-twitter"></use>
+                                    <use xlink:href="image/sprite.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </div>
@@ -333,17 +343,17 @@
                         <div class="social-media-box">
                             <a href="facebook.com" class="facebook-icon">
                                 <svg class="social-media-icons">
-                                    <use xlink:href="image/sprite.svg#icon-social-facebook"></use>
+                                    <use xlink:href="image/sprite.svg#icon-facebook"></use>
                                 </svg>
                             </a>
                             <a href="youtube.com" class="youtube-icon">
                                 <svg class="social-media-icons">
-                                    <use xlink:href="image/sprite.svg#icon-youtube"></use>
+                                    <use xlink:href="image/sprite.svg#icon-instagram"></use>
                                 </svg>
                             </a>
                             <a href="twitter.com" class="twitter-icon">
                                 <svg class="social-media-icons">
-                                    <use xlink:href="image/sprite.svg#icon-social-twitter"></use>
+                                    <use xlink:href="image/sprite.svg#icon-twitter"></use>
                                 </svg>
                             </a>
                         </div>
@@ -458,7 +468,7 @@
                         <a href=""><li>google app</li></a>
                         <a href=""><li>apple store</li></a>
                         <a href=""><li>house delivery</li></a>
-                        <a href=""><li>schudle daily order</li></a>
+                        <a href=""><li>daily order</li></a>
                         <a href=""><li>responsive</li></a>
                         
                     </ul>
