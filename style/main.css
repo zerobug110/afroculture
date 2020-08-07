@@ -78,6 +78,10 @@ html{
     cursor: pointer;
 }
 
+.cart-icon:hover .cart-container {
+    display: block;
+}
+
 header label {
 
     display: none;
@@ -257,7 +261,10 @@ header label {
     
 }
 .services-heading-sub {
-    text-transform: capitalize;
+    text-transform: uppercase;
+    color: #319908;
+    margin-bottom: .5rem;
+    font-weight: 400;
 }
 
 .services-heading-text{
@@ -320,13 +327,12 @@ header label {
     font-size: 5rem;
     background-image: linear-gradient(
         to right, 
-      rgba(236, 221, 11, 0.7),
-      rgba(13, 182, 4, 0.815));
-      -webkit-background-clip: text;
-      color: transparent;
-      display: inline-block;
-    border-bottom: #cfc204 .1rem solid;
-    margin-bottom: 2rem;
+        rgba(236, 221, 11, 0.7),
+        rgba(13, 182, 4, 0.815));
+        -webkit-background-clip: text;
+        color: transparent;
+        display: inline-block;
+        margin-bottom: 1rem;
     
 }
 
@@ -398,8 +404,8 @@ header label {
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1rem;
-    border-bottom: .2rem solid #fff;
     padding-top: .5rem;
+    
 }
 .card-heading-sub{
     text-transform: uppercase;
@@ -435,13 +441,14 @@ header label {
     border-radius: 2rem;
     padding: 1rem 3rem;
     text-decoration: none;
-    color: #777;
+    color: #319908;
     text-transform: uppercase;
-    box-shadow:  0 .3rem 1rem rgba(0, 0, 0, .3);
+    font-weight: 600;
 }
 .order-btn-mini:hover{
-    background-color: #f33900;
+    background-color: #319908;
     color: #fff;
+    
   
 }
                                         /********************** STAFFS SECTION *******************/
@@ -942,7 +949,7 @@ header label {
         border-bottom-right-radius: 0;
     }
    
-    .card-back{
+    .card-back{x
         height: 33rem;       
         box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .9);    
         bottom: -25rem;
