@@ -999,6 +999,10 @@ header label {
         padding: 2rem 2rem;
         margin-bottom: 5rem;
     }
+    
+    .figure {
+        margin: 0 auto;
+    }
 
     .story > *{
         transform: skewX(0deg);
@@ -1169,6 +1173,10 @@ header label {
     /***** consumer review *****/
     .story > *{
         transform: skewX(0deg);
+    }
+    .story-heading {
+        text-align: center;
+        margin: 2rem 0;
     }
 
     .story:after{
