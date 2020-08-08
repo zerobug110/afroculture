@@ -429,7 +429,6 @@ header label {
         position: relative;
         bottom: 33rem;
         transform: rotateY(180deg);
-        
 }
 .order-price{
     font-size: 4rem;
@@ -892,7 +891,7 @@ header label {
         margin: 2rem 0;
     }
     
-    services-box:hover{
+    .services-box:hover{
         transform: scale(1.1);
         box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.192);
     }
@@ -935,6 +934,7 @@ header label {
 
     .card{
         height: 33rem;
+
     }
 
     
@@ -949,7 +949,7 @@ header label {
         border-bottom-right-radius: 0;
     }
    
-    .card-back{x
+    .card-back{
         height: 33rem;       
         box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .9);    
         bottom: -25rem;
