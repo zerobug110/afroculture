@@ -59,7 +59,9 @@ html{
     position: absolute;
     position: fixed;
     z-index: 999;
-    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .5);
+    box-shadow: 0 .1rem .2rem 0 rgba(0,0,0,.1),
+                0 .1rem .2rem 0  rgba(0,0,0,.2);
+
 }
 
 .nav-bar ul{
@@ -314,14 +316,17 @@ header label {
     height: 29rem;
     background-color: #fff;
     transition: all .2s ease-in-out;
-    box-shadow: .0 .3rem 1rem rgba(0, 0, 0, 0.3),
-                .0 .3rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 .1rem .2rem 0 rgba(0,0,0,.1),
+                0 .1rem .2rem 0  rgba(0,0,0,.2);
+
     margin: 6rem 0;
 }
 
 .services-box:hover{
     transform: translateY(-.5rem);
-    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.192);
+    box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,.1),
+                0 .5rem 1rem 0  rgba(0,0,0,.2);
+
 }
 .icon-style {
     font-size: 5rem;
@@ -371,7 +376,9 @@ header label {
 .food-img{
     width:100%;
     height: 33rem;
-    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .9);
+    box-shadow: 0 .1rem .2rem 0 rgba(0,0,0,.1),
+                0 .1rem .2rem 0  rgba(0,0,0,.2);
+
     border-radius: .3rem;
 }
 .card{
@@ -424,7 +431,9 @@ header label {
         to bottom right,
         #ffb900, #ff7730);
         height: 33rem;       
-        box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .9);    
+        box-shadow: 0 .1rem .2rem 0 rgba(0,0,0,.1),
+                    0 .1rem .2rem 0  rgba(0,0,0,.2);
+ 
         color: #fff;
         position: relative;
         bottom: 33rem;
@@ -557,7 +566,9 @@ header label {
 }
 .story{
     width: 75%;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+    box-shadow: 0 .1rem .2rem 0 rgba(0,0,0,.1),
+                0 .1rem .2rem 0  rgba(0,0,0,.2);
+
     background-color: #fff;
     transform: skewX(-15deg);
     margin: 0 auto;
@@ -635,6 +646,9 @@ header label {
     top: 0;
     right: 0;   
     padding: 2rem 0 0 5rem;  
+    box-shadow: 0 .1rem .2rem 0 rgba(0,0,0,.1),
+                0 .1rem .2rem 0  rgba(0,0,0,.2);
+
 }
 
 .form > * {
@@ -669,7 +683,6 @@ header label {
 .input:focus{
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
-    border-bottom: .3rem solid #319908;
 }
 
 .inputs::-webkit-input-placeholder{
@@ -683,7 +696,9 @@ header label {
     width: 90%;
     padding-top: 2rem;
     border: none;
-    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .2);
+    box-shadow: 0 .1rem .2rem 0 rgba(0,0,0,.1),
+                0 .1rem .2rem 0  rgba(0,0,0,.2);
+
 }
 
 .form-group textarea{
@@ -691,7 +706,9 @@ header label {
     width: 90%;
     font-size: inherit;
     border: none;
-    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .5);
+    box-shadow: 0 .1rem .2rem 0 rgba(0,0,0,.1),
+                0 .1rem .2rem 0  rgba(0,0,0,.2);
+
 }
 
 #submit-btn{
@@ -703,7 +720,9 @@ header label {
     border: none;
     border-top-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .5);
+    box-shadow: 0 .1rem .2rem 0 rgba(0,0,0,.1),
+                0 .1rem .2rem 0  rgba(0,0,0,.2);
+
     color: #fff;
     font-size: inherit;
     position: relative;
