@@ -48,7 +48,14 @@ html{
     z-index: 990;
     margin-top: 7rem;
     box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .5);
-    display: none;
+}
+.cart-close {
+    font-size: 2.5rem;
+    font-weight: 550;
+    text-decoration: none;
+    float: right;
+    padding: .3rem 1rem;
+    color:#000;
 }
                                                   /*********** HEADER*************/
 .nav-bar{
