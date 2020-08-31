@@ -15,6 +15,7 @@ cartContainer.addEventListener('click', () => {
 
 close.addEventListener('click', () => {
     document.querySelector('.cart-container').style.display = 'none'
+    
 
 });
 
