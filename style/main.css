@@ -40,7 +40,7 @@ html{
 }
 .cart-container {
     font-size: 1.6rem;
-    width: 30rem;
+    width: 40rem;
     background-color: #fff;
     border-top: .1rem solid #d8d7d7;
     position: fixed;
@@ -51,17 +51,20 @@ html{
     box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .5);
     display: flex;
     padding: 4rem 1rem 2rem 1rem;
+    display: none;
+
 }
 
 .cart-close {
     font-size: 2.5rem;
     font-weight: 550;
     text-decoration: none;
-    float: right;
+    position: absolute;
+    right: 2rem;
     color:#000;
-    transform: translateY(-4rem);
-    
+    transform: translateY(-4rem);    
 }
+
 .cart-item {
     display: flex;
     justify-content: space-around;
@@ -75,6 +78,15 @@ html{
     margin: 3rem;
 }
 
+.remove {
+    display: block;
+    color: red;
+    cursor: pointer;
+    font-size: 2rem;
+    transform: translateY(-.3rem);
+
+}
+
 .cart-link {
     text-align: center;
     padding: .2rem 2rem;
@@ -82,7 +94,7 @@ html{
     text-align: center;
     text-decoration: none;
     color: #38860e;
-    border-radius: 2rem;
+
 }
 
 .cart-link:hover {
@@ -94,7 +106,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .food-name {

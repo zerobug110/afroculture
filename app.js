@@ -5,27 +5,20 @@ const close = document.querySelector('.cart-close');
 
 
 // EventListeners
+addToCart.addEventListener('click', () => {
 
-loadeventListener ();
-
-function loadeventListener () {
-
-} 
+});
 
 cartContainer.addEventListener('click', () => {
     document.querySelector('.cart-container').style.display = 'block'
-
 });
-
-addToCart.addEventListener('click', () => {
-    console.log('clicked')
-});
-
 
 close.addEventListener('click', () => {
     document.querySelector('.cart-container').style.display = 'none'
     
 });
+
+
 
 
 // Functions
