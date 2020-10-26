@@ -4,6 +4,7 @@ const addToCart = document.querySelector('.order-btn-mini');
 const cartContainer = document.querySelector('.cart-icon');
 const close = document.querySelector('.cart-close');
 const menu = document.getElementById('menu');
+const shoppingCart = document.querySelector('cart-container')
 
 
 // EventListeners
@@ -42,9 +43,32 @@ function buyFood (event) {
 }
 
 //read the HTML information of the selected food
-
 function getFoodInfo(food) {
-    console.log(food);
+    // Create an object with food data
+    const foodInfo = {
+        image: food.querySelector('img').src,
+        title: food.querySelector('.card-heading').textContent,
+        price: food.querySelector('.order-price').textContent,
+        id: food.querySelector('a').getAttribute('data-id')
+    };
+    addIntoCart(foodInfo)
+};
+
+function addIntoCart() {
+    const cartItem = document.querySelector('.cart-item');
+
+    cartItem.innerHTML = `
+        <img src="${food.image}">
+        </div>
+        <p class=" food-name">${food.title}</p>
+        <div class="food-price">
+           ${food.price}
+        </div>
+        <span class="remove" data-id= "${food.id}">x</span>
+    `;
+    console.log(cartItem);
+    //add to the shopping cart
+    shoppingCar.appendChild(cartItem);
 }
 
 
