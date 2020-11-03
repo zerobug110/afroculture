@@ -424,109 +424,76 @@ header label {
 
 .row-food-menu{
     max-width: 140rem;   
-    margin: 0 auto;
     padding: 0 2rem;
-    perspective: 150rem;
-}
-.row-food-menu:last-child{
-    padding-bottom: 5rem;
-}
-.row-food-menu:after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.food-menu-container{
-    width: calc((100% - 2rem * 3)/4);
-    float: left;
-    margin-bottom: 2rem;
-     height: 33rem;
-}
-
-[class^="food-menu-cont"]:not(:last-child){
-    margin-right: 2rem;
-}
-
-.food-img{
-    width:100%;
-    height: 33rem;
-    box-shadow: 0 .1rem .2rem 0 rgba(0,0,0,.1),
-                0 .1rem .2rem 0  rgba(0,0,0,.2);
-
-    border-radius: .3rem;
-}
-.card{
-    text-align: center;
-    font-size: 1.6rem;
-    transform-style: preserve-3d;
-    position: relative;
-    transition: all 1s ease;
-    height: 33rem;
-}
-.card:after{
-    content: "";
-    display: table;
-    clear: both;
-}
-.card li{
-    list-style: none;
-    font-weight: 300;
-    text-transform: capitalize;
-    border-bottom: .1rem solid #eee;
-    width:30%;
     margin: 0 auto;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.card:hover{
-    transform: rotateY(180deg)
+.food-menu-container {
+    width: 28rem;
+    height: 44rem;
+    background-color: #fff;
+    margin-bottom: 5rem;
+    overflow: hidden;
+
+    box-shadow: 0 1rem 2rem 0 rgba(0,0,0, .1),
+                0 .1rem .2rem 0 rgba(0,0,0, .2);
+    text-align: center;
 }
-.card-heading{
-    font-size: 2rem;
+
+.food-img-box {
+    width: 30rem;
+    height: 30rem;
+    margin: -10rem auto 0 auto;
+    /* clip-path: circle(50% at 45% 50%); */
+    box-shadow: 0 .1rem .3rem rgba(0,0,0, .8);
+    clip-path: polygon(0 0, 100% 0, 100% 80%,0 100%);
+}
+
+.food-img {
+    width: 100%;
+    height: 100%;
+}
+
+.recipe {
+    font-size: 2.5rem;
+    color: #319908;
     text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 1rem;
-    padding-top: .5rem;
     
 }
-.card-heading-sub{
-    text-transform: uppercase;
-    letter-spacing: .5rem;
-    font-size: 1.4rem;
-    background-color: #fff;
-    color: #ffb900;
+
+
+
+.recipe-list {
+    font-size: 1.6rem;
+    list-style: none;
+    text-transform: capitalize;
+    
 }
-.card-front, .card-back{
-    height: 33rem;
-    backface-visibility: hidden;
-    border-radius: .3rem;
-}
-.card-back{
-    background-image: linear-gradient(
-        to bottom right,
-        #ffb900, #ff7730);
-        height: 33rem;       
-        box-shadow: 0 .1rem .2rem 0 rgba(0,0,0,.1),
-                    0 .1rem .2rem 0  rgba(0,0,0,.2);
- 
-        color: #fff;
-        position: relative;
-        bottom: 33rem;
-        transform: rotateY(180deg);
-}
+
+
 .order-price{
-    font-size: 4rem;
+    font-size: 3rem;
     display: block;
+    
+    margin-bottom: 1rem;
     
 }
 .order-btn-mini{
-    background-color: #fff;
+    font-size: 1.6rem;
+    background-color: #319908;
     border-radius: 2rem;
     padding: 1rem 3rem;
     text-decoration: none;
-    color: #319908;
+    color: #fff;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 400;
+
+    box-shadow: 0 1rem 2rem 0 rgba(0,0,0, .1),
+    0 .1rem .2rem 0 rgba(0,0,0, .2);
 }
 .order-btn-mini:hover{
     background-color: #319908;
