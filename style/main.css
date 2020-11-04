@@ -325,7 +325,7 @@ header label {
                                   /**********SERVICES SECTION****************/
 
 .services-section{
-    background-color: #eee;
+    background-color: #f3f4f5;
     padding-top: 2rem;
     position: relative;
 }
@@ -394,7 +394,6 @@ header label {
     box-shadow: 0 .1rem .2rem 0 rgba(0,0,0,.1),
                 0 .1rem .2rem 0  rgba(0,0,0,.2);
 
-    margin: 6rem 0;
 }
 
 .services-box:hover{
@@ -412,13 +411,13 @@ header label {
         -webkit-background-clip: text;
         color: transparent;
         display: inline-block;
-        margin-bottom: 1rem;
-    
 }
 
                                /********************** FOOD MENU SECTION *******************/
 .food-menu{
-    background-color: #eee;
+    background-color: #f3f4f5;
+    padding-bottom: 7rem;
+    
 }
 
 
@@ -426,17 +425,24 @@ header label {
     max-width: 140rem;   
     padding: 0 2rem;
     margin: 0 auto;
+   
 
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    grid-gap: 2rem;
+
+    /* display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+
+
 }
 
 .food-menu-container {
     width: 28rem;
-    height: 44rem;
+    height: 41rem;
     background-color: #fff;
-    margin-bottom: 5rem;
+    
     overflow: hidden;
 
     box-shadow: 0 1rem 2rem 0 rgba(0,0,0, .1),
@@ -445,12 +451,10 @@ header label {
 }
 
 .food-img-box {
-    width: 30rem;
-    height: 30rem;
-    margin: -10rem auto 0 auto;
-    /* clip-path: circle(50% at 45% 50%); */
-    box-shadow: 0 .1rem .3rem rgba(0,0,0, .8);
-    clip-path: polygon(0 0, 100% 0, 100% 80%,0 100%);
+    width: 28rem;
+    height: 18rem;
+    margin:0 auto;
+    padding: 1rem;
 }
 
 .food-img {
@@ -458,20 +462,23 @@ header label {
     height: 100%;
 }
 
-.recipe {
-    font-size: 2.5rem;
-    color: #319908;
-    text-transform: uppercase;
-    
+.food-name {
 }
 
+.recipe {
+    font-size: 2rem;
+    color: #319908;
+    font-weight: 500;
+    text-transform: uppercase;
+}
 
 
 .recipe-list {
     font-size: 1.6rem;
     list-style: none;
     text-transform: capitalize;
-    
+    width: 70%;
+    margin: 0 auto;
 }
 
 
@@ -492,11 +499,10 @@ header label {
     text-transform: uppercase;
     font-weight: 400;
 
-    box-shadow: 0 1rem 2rem 0 rgba(0,0,0, .1),
-    0 .1rem .2rem 0 rgba(0,0,0, .2);
+    box-shadow: 0 .1rem .2rem rgba(0,0,0, .3);
 }
 .order-btn-mini:hover{
-    background-color: #319908;
+    background-color: #ffb900;
     color: #fff;
     
   
@@ -518,16 +524,17 @@ header label {
 }
 
 .staff-col{
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
         to bottom right,
         #fdf132,
-        #f39c12);
+        #f39c12); */
+    background-color: #fff;
     float:left;
     width: calc((100% - 2 * 4rem)/3);
-    margin: 7rem 0;
+    margin-bottom: 7rem;
     border-radius: .3rem;
     position: relative;
-    box-shadow: 0 .2rem 3rem rgba(0, 0, 0, .9);
+    box-shadow: 0 .1rem .3rem rgba(0, 0, 0, .9);
     backface-visibility: hidden;
 }
 
@@ -566,13 +573,14 @@ header label {
     left: 35%;
     transform: translate(-50%, -50%);
     font-size: 2rem;
-    background-image:linear-gradient( 
+    /* background-image:linear-gradient( 
         to left top,
         #f39c12,
-        #fdf132);
+        #fdf132); */
+    background-color: #fff;
     padding: .4rem;
-    color: #07300c;
-    box-shadow: 0 .1rem .7rem rgba(0, 0, 0, .9);    
+    color: #1c301e;
+    box-shadow: 0 .1rem .2rem rgba(0, 0, 0, .9);    
 }
 
 .social-media-icons{
@@ -602,7 +610,7 @@ header label {
 /**** consumer review ******/
 
 .consumer-review{
-    background-color: #eee;
+    background-color: #f3f4f5;
     padding-top:5em;
     position: relative;
 }
@@ -666,7 +674,7 @@ header label {
 }
 /******** MAP *********/
 .map-n-form-section{
-    background-color: #eee;
+    background-color: #f3f4f5;
     font-size: 1.8rem;
 }
 
@@ -958,7 +966,7 @@ header label {
     }
 
     /***FOOD**/    
-    .row-food-menu{
+    /* .row-food-menu{
         max-width: 140rem;   
         margin: 0 auto;
         padding: 0 2rem;
@@ -1015,7 +1023,7 @@ header label {
         box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .9);    
         bottom: -25rem;
         transform: rotateY(0deg);
-    }
+    } */
     /**** STAFF ****/
     .staff-col{
         width: calc((100% - 2 * 6rem)/3);
@@ -1179,7 +1187,7 @@ header label {
     }
     
     /***FOOD**/    
-    .row-food-menu:last-child{
+    /* .row-food-menu:last-child{
         padding-bottom: 2rem;
     }
     
@@ -1203,7 +1211,7 @@ header label {
     .card{
         height: 25rem;
     }
-   
+    */
     /**** STAFF ****/
     .staff-col{
         width: calc((100% - 1 * 6rem)/1);
