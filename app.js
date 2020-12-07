@@ -1,3 +1,5 @@
+//strict mode 
+'use strict';
 // Variables
 
 const addToCart = document.querySelector('.order-btn-mini');
