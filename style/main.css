@@ -620,16 +620,11 @@ header label {
                 0 .1rem .2rem 0  rgba(0,0,0,.2);
 
     background-color: #fff;
-    transform: skewX(-15deg);
     margin: 0 auto;
     padding: 5rem 5rem;
     margin-bottom: 5rem;
     transition: all .3s .2s;
 
-}
-.story > *{
-    transform: skewX(15deg);
-    
 }
 .story:after{
     content: "";
@@ -696,8 +691,8 @@ header label {
     top: 0;
     right: 0;   
     padding: 2rem 0 0 5rem;  
-    box-shadow: 0 .1rem .2rem 0 rgba(0,0,0,.1),
-                0 .1rem .2rem 0  rgba(0,0,0,.2);
+    /* box-shadow: 0 .1rem .2rem 0 rgba(0,0,0,.1), */
+                /* 0 .1rem .2rem 0  rgba(0,0,0,.2); */
 
 }
 
@@ -724,6 +719,7 @@ header label {
 }
 .input{
     color: #444;
+    background-color: #f3f4f5;
     font-size: 1.6rem;
     font-family: sans-serif;
     padding: 1rem .5rem;
@@ -735,9 +731,10 @@ header label {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
 }
 
-.inputs::-webkit-input-placeholder{
-    
-    color: #777;
+.input::placeholder{
+    color: #555;
+    padding-right: 2rem;
+   
 }
 
 .form-group #fullname,#email{
