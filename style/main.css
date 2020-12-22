@@ -44,15 +44,25 @@ html{
     background-color: #fff;
     border-top: .1rem solid #d8d7d7;
     position: fixed;
+    top: -200rem;
     right: 0;
     z-index: 990;
     margin-top: 7rem;
     margin-right: 1rem;
     box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .5);
     display: flex;
+    flex-direction: column;
     padding: 4rem 1rem 2rem 1rem;
-    display: none;
+    transition: all .4s;
+    opacity: 0;
+    pointer-events: none;
+}
 
+.show-cart{
+    pointer-events: all;
+    position: fixed;
+    top: 0;
+    opacity: 1;
 }
 
 .cart-close {
@@ -379,12 +389,12 @@ header label {
 }
 
 .col-1-of-4{
-    width: calc((100% - 3*6rem)/4);
+    width: calc((100% - 3*2rem)/4);
     padding: 1rem 1rem;
 }
 
 .col-1-of-4:not(:last-child){
-    margin-right: 6rem;
+    margin-right: 2rem;
 }
 
 .services-box{
@@ -422,13 +432,12 @@ header label {
 
 
 .row-food-menu{
-    max-width: 140rem;   
-    padding: 0 2rem;
+    max-width: 114rem;       
     margin: 0 auto;
    
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 2rem;
 
     /* display: flex;
@@ -439,7 +448,6 @@ header label {
 }
 
 .food-menu-container {
-    width: 28rem;
     height: 41rem;
     background-color: #fff;
     
@@ -451,7 +459,6 @@ header label {
 }
 
 .food-img-box {
-    width: 28rem;
     height: 18rem;
     margin:0 auto;
     padding: 1rem;
@@ -680,7 +687,7 @@ header label {
 }
 #map{
     width: 60%;
-    height: 55rem;
+    height: 48rem;
 }
 
 .form{
@@ -693,6 +700,8 @@ header label {
     padding: 2rem 0 0 5rem;  
     /* box-shadow: 0 .1rem .2rem 0 rgba(0,0,0,.1), */
                 /* 0 .1rem .2rem 0  rgba(0,0,0,.2); */
+
+    align-items: center;
 
 }
 
@@ -749,7 +758,6 @@ header label {
 }
 
 .form-group textarea{
-    margin-top: 2rem;
     width: 90%;
     font-size: inherit;
     border: none;
