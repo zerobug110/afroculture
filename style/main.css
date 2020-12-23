@@ -647,7 +647,7 @@ header label {
 
 .figure{
     width: 20rem;
-    height: 16rem;
+    height: 20rem;
     float: left;
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
@@ -657,7 +657,7 @@ header label {
 
 .figure-img{
     width: 100%;
-    border-radius: 70%;
+    border-radius: 50%;
 }
 .btn-more{
     font-size: 1.6rem;
