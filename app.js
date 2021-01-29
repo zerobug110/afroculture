@@ -9,6 +9,9 @@ const menu = document.getElementById('menu');
 const shoppingCart = document.querySelector('.cart-container')
 const show = document.queryCommandEnabled('show-cart');
 
+document.querySelector('.lines').addEventListener('click', function(){
+    document.querySelector('.nav-bar').classList.toggle('show')
+});
 
 // SHOW THE ORDERED FOOD
 cartIcon.addEventListener('click', () => {
@@ -16,6 +19,7 @@ cartIcon.addEventListener('click', () => {
 });
 
 // ADD THE FOOD INTO THE CART WHEN ORDERED
+
 
 
 

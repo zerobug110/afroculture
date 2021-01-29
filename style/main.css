@@ -80,7 +80,6 @@ html{
     justify-content: space-around;
     align-items: center;
     margin-bottom: 1rem;
-
     font-size-adjust: 1.6rem;
 }
 
@@ -146,6 +145,9 @@ html{
     z-index: 999;
     box-shadow: 0 .1rem .2rem 0 rgba(0,0,0,.1),
                 0 .1rem .2rem 0  rgba(0,0,0,.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -163,6 +165,7 @@ html{
     width: 3rem;
     transform: translateY(-.5rem);
     cursor: pointer;
+    margin-right: 3rem;
 }
 
 .cart-icon:hover .cart-container {
@@ -197,13 +200,36 @@ header label {
 
 .logo{
     width: 5rem;
-    margin: 1rem 2.5rem;
     float: left;
     animation-name: rotateLogo;
     animation-delay: .3s;
     animation-duration: 2s;
 }
 
+.show {
+    display: block;
+}
+
+.lines {
+    width: 2rem;
+    height: 3rem;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    top: 3rem;
+    right: 5rem;
+    z-index: 10;
+    display: none;
+}
+
+.line {
+    background-color: #319908;
+    width: 3rem;
+    height: .5rem;
+    margin-bottom: .3rem;
+}
 
 @keyframes rotateLogo{
     0%{
@@ -893,37 +919,45 @@ header label {
         color: #fff;
     }
 
+    .lines {
+        display: block;
+    }
 
     .nav-bar {
         width: 100%;
-        height: 100%;
+        height: 100vh;
         float: none;
         text-align: center;
         display: none;
-        background-image: linear-gradient(to right, #ffb900, #ff7730);
-        z-index: 100;
+        z-index: 8;
         position: absolute;
+        background-color: #e0a21c;
+        display: none;
     }
 
     .nav-bar li {
         float: none;
-        padding: 2.5rem;
+        padding: 5rem;
+    }
+
+    .nav-bar ul {
+        text-align: center;
+        margin-top: 8rem;
     }
     
     .logo{
-        width: 10rem;
-        padding: 3.3rem;
-        float: left;
-        animation-name: rotateLogo;
-        animation-delay: .3s;
-        animation-duration: 2s;
+        display: none;
     }
 
-    
+    .cart-icon {
+        display: none;
+    }
+
     .nav-bar a:link,
     .nav-bar a:visited,
     .nav-bar a:active{
-        color: #fff;
+        color: #333;
+        font-size: 2rem;
     }
 
     .nav-bar ul {
@@ -934,15 +968,6 @@ header label {
         color: #fff;
     }
 
-    header label {
-        cursor: pointer;
-        display: block;
-    }
-
-    #toggle:checked + nav, .close{
-        display: block;
-        
-    }
     
     .col-1-of-4{
         width: calc((100% - 2*6rem)/2);
